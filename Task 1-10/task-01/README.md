@@ -33,4 +33,5 @@ Your task should meet the assesment criteria in the **Final Project - Scorecard 
 
 ## Example
 
+<img src="./images/Task-Manager-Templete.png">
 ![](https://github.com/generation-org/jwd-final-project/blob/main/task-1/images/wireframes.png)
