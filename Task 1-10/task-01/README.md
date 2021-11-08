@@ -32,5 +32,6 @@ You should have implemented the different screens of your application.
 Your task should meet the assesment criteria in the **Final Project - Scorecard Rubric**.
 
 ## Example
-
-![](https://github.com/generation-org/jwd-final-project/blob/main/task-1/images/wireframes.png)
+<img src="./images/Task1.jpg">
+<img src="./images/Task-Manager-Templete.png">
+<img src="https://github.com/generation-org/jwd-final-project/blob/main/task-1/images/wireframes.png">
