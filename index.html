@@ -14,52 +14,105 @@
 
 <body>
 	<div class="container-fluid">
-		<header class="row">
-			<h1 class="col">Timely Task Manager</h1>
+    <div class="wrapper">
+		<header class="row justify-contentcenter">
+    
+			<h1 class="col-12">Timely Task Manager</h1>
 		</header>
 
-		<main class="row row-cols-1 row-cols-md-2">
-			<section class="col col-12 col-md-4">
+		<main class="row row-cols-1 row-cols-lg-2 g-5">
+			<section class="col col-12 col-lg-4">
 				<form>
-          <div class="form-group row">
-            <p>
+          <h2>Assign a Task </h2>
+          <p>
               Fill in the form below. And your task card will be generated.
-            </p>
-          </div>
-					<div class="form-group row">
-						<label for="name" class="col">Name:</label>
-              <input type="name" class="form-control col" id="name" aria-describedby="emailHelp" placeholder="Enter name">
-            </div>
-
-            <div class="form-group row">
-              <label for="description" class="col">Description:</label>
-              <input type="description" class="form-control col" id="description" placeholder="Description">
-            </div>
-
-            <div class="row row-cols-2 row-cols-md-1">
-              <div class="col">
-                <div class="form-group row">
-                  <label for="assigned to" class="col">Assigned to</label>
-                  <input type="assigned to" class="form-control col" id="assigned to" placeholder="Assigned to">
-                </div>
+          </p>
+					<div class="form-group row row-cols-1 row-cols-lg-2 ">
+						<label for="name" class="col-3 col-form-label">Name:</label>
+              <div class="col-8 col-lg-12" >
+              <input type="text" id="name" placeholder="Enter Name" class="form-control">
               </div>
-                <div class="col">
-                  <div class="form-group row">
-                    <label for="due date" class="col">Due date:</label>
-                    <input type="due date" class="form-control col" id="due date" placeholder="Due date">
+            </div>
+
+            <div class="form-group row row-cols-1 row-cols-lg-2">
+              <label for="description" class="col-3">Description:</label>
+              <div class="col-8 col-lg-12">
+              <input type="text" class="form-control " id="description" placeholder="Description">
+              </div>
+            </div>
+
+            <div class="row row-cols-2 row-cols-lg-1 ">
+              <div class="col">
+                <div class="form-group row row-cols-1 row-cols-lg-2 ">
+                  <label for="assigned to" class="col">Assigned To:</label>
+                  <div class="col-12">
+                  <input type="text" class="form-control " id="assigned to" placeholder="Assigned To">
                   </div>
                 </div>
               </div>
-            <button type="create task" class="btn btn-primary col">Create Task</button>
+                <div class="col">
+                  <div class="form-group row row-cols-1 row-cols-lg-2">
+                    <label for="due date" class="col">Due Date:</label>
+                    <div class="col-12">
+                    <input type="text" class="form-control" id="due date" placeholder="Due Date">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="centerb">
+            <button type="button" class="btn btn-primary col">Create Task</button>
+              </div>
           </form>
         </section>
         
         
-        <section class="col col-12 col-md-8">
-         <div class="row row-cols-1 row-cols-md-3">
-          <div class="card col">
+        <section class="col col-12 col-lg-8 d-flex flex-row">
+         <div class="row row-cols-1 row-cols-lg-3 g-3 ">
+           <div class="col-lg-4 gx-3">
+            <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Task 1</h3>
+              </div>
+
+            <div class="row">
+              <h4 class="card-subtitle col">Description:</h4>
+              <p class="card-text col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing bibendum est ultricies. Faucibus purus in massa tempor nec feugiat nisl.</p>
+              
+              <div class="row">
+              <h4 class="card-subtitle col">Assigned To:</h4>
+              <p class="card-text col">Silly Sally</p>
+              </div>
+              </div>
+
+            <div class="row row-cols-2 row-cols-lg-1">
+              <div class="col">
+                <div class="row">
+                  <h4 class="card-subtitle col">Due Date:</h4>
+                  <p class="card-text col">mm/dd/yyyy</p>
+                </div>
+              </div>
+                
+                <div class="col">
+                  <div class="row">
+                  <h4 class="card-subtitle col">Status:</h4>
+                  <p class="card-text col">Assigned</p>
+                </div>
+                  </div>
+              </div>
+              
+              <div class="row">
+                <button class="col">Start</button> 
+                <button class="col">Completed</button>
+                <button class="col">Archive</button>
+              </div>
+          
+            </div>
+          </div>
+          
+          <div class = "col-lg-4">
+            <div class="card">
            <div class="card-header">
-            <h3 class="card-title">Task 1</h3>
+            <h3 class="card-title">Task 2</h3>
             </div>
 
            <div class="row">
@@ -72,7 +125,48 @@
             </div>
             </div>
 
-           <div class="row row-cols-2 row-cols-md-1">
+           <div class="row row-cols-2 row-cols-lg-1">
+            <div class="col">
+              <div class="row">
+                <h4 class="card-subtitle col">Due Date:</h4>
+                <p class="card-text col">mm/dd/yyyy</p>
+              </div>
+            </div>
+              
+              <div class="col">
+                <div class="row">
+                <h4 class="card-subtitle col">Status:</h4>
+                <p class="card-text col">Assigned</p>
+              </div>
+                </div>
+            </div>
+            
+            <div class="row">
+              <button class="col">Start</button> 
+              <button class="col">Completed</button>
+              <button class="col">Archive</button>
+            </div>
+        
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+           <div class="card">
+           <div class="card-header">
+            <h3 class="card-title">Task 3</h3>
+            </div>
+
+           <div class="row">
+            <h4 class="card-subtitle col">Description:</h4>
+            <p class="card-text col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing bibendum est ultricies. Faucibus purus in massa tempor nec feugiat nisl.</p>
+            
+            <div class="row">
+            <h4 class="card-subtitle col">Assigned To:</h4>
+            <p class="card-text col">Silly Sally</p>
+            </div>
+            </div>
+
+           <div class="row row-cols-2 row-cols-lg-1">
             <div class="col">
               <div class="row">
                 <h4 class="card-subtitle col">Due Date:</h4>
@@ -96,11 +190,97 @@
         
           </div>
           </div>
+
+          <div class="col-lg-4">
+          <div class="card">
+           <div class="card-header">
+            <h3 class="card-title">Task 4</h3>
+            </div>
+
+           <div class="row">
+            <h4 class="card-subtitle col">Description:</h4>
+            <p class="card-text col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing bibendum est ultricies. Faucibus purus in massa tempor nec feugiat nisl.</p>
+            
+            <div class="row">
+            <h4 class="card-subtitle col">Assigned To:</h4>
+            <p class="card-text col">Silly Sally</p>
+            </div>
+            </div>
+
+           <div class="row row-cols-2 row-cols-lg-1">
+            <div class="col">
+              <div class="row">
+                <h4 class="card-subtitle col">Due Date:</h4>
+                <p class="card-text col">mm/dd/yyyy</p>
+              </div>
+            </div>
+              
+              <div class="col">
+                <div class="row">
+                <h4 class="card-subtitle col">Status:</h4>
+                <p class="card-text col">Assigned</p>
+              </div>
+                </div>
+            </div>
+            
+            <div class="row">
+              <button class="col">Start</button> 
+              <button class="col">Completed</button>
+              <button class="col">Archive</button>
+            </div>
+        
+          </div>
+          </div>
+
+          <div class="col-lg-4">
+          <div class="card">
+           <div class="card-header">
+            <h3 class="card-title">Task 5</h3>
+            </div>
+
+           <div class="row">
+            <h4 class="card-subtitle col">Description:</h4>
+            <p class="card-text col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing bibendum est ultricies. Faucibus purus in massa tempor nec feugiat nisl.</p>
+            
+            <div class="row">
+            <h4 class="card-subtitle col">Assigned To:</h4>
+            <p class="card-text col">Silly Sally</p>
+            </div>
+            </div>
+
+           <div class="row row-cols-2 row-cols-lg-1">
+            <div class="col">
+              <div class="row">
+                <h4 class="card-subtitle col">Due Date:</h4>
+                <p class="card-text col">mm/dd/yyyy</p>
+              </div>
+            </div>
+              
+              <div class="col">
+                <div class="row">
+                <h4 class="card-subtitle col">Status:</h4>
+                <p class="card-text col">Assigned</p>
+              </div>
+                </div>
+            </div>
+            
+            <div class="row">
+              <button class="col">Start</button> 
+              <button class="col">Completed</button>
+              <button class="col">Archive</button>
+            </div>
+        
+          </div>
+          </div>
+
+      
+
+          </div>
+          </div>
         </section>
+
       </main>
-      <div class="card">
-        <div class="card-body">
-          <footer class="row">
+      <footer class="row">
             <p class="col"> 
             Authors: 
             </p>
@@ -110,8 +290,7 @@
             <p class="col">
             Generation USA Group Project
             </p>
-          </footer>
-        </div>
+      </footer>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

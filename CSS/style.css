@@ -8,13 +8,95 @@
 }
 
 body {
-font-family: "Spartan";
-background-image: url(../images/bgtxt.jpg);
-background-repeat: no-repeat;
-background-size: auto;
-background: linear-gradient(180deg, rgba(19,39,62,0.85) 0%, rgba(190,216,212,0.8463979341736695) 100%);
+  font-family: Spartan, sans-serif;
+  background-image: url(../images/bgtxt.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 100%;
+  min-width: 100%;
+  color: #13273E;
+}
+.container-fluid{
+min-height: 100%;
+min-width: 100%;
+ background: linear-gradient(180deg, rgba(19, 39, 62, 0.85) 0%, rgba(190, 216, 212, 0.7225) 93.75%);
+
 }
 
 h1{
-
+  color: #F7F9F9;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
 }
+
+h2{
+  font-weight: 600;
+  padding: 10px;
+}
+
+form {
+background: #F7F9F9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+overflow: hidden;
+margin: 10px;
+padding: 20px;
+}
+
+form p{
+  font-weight: 600;
+  margin: auto;
+  text-align: left;
+  padding: 10px;
+}
+form h2{
+  text-align: center;
+}
+label{
+  font-weight: 500;
+}
+
+input[type=text] {
+  background-color: #BED8D4;
+  color: #13273E;
+  border-radius: 5px; 
+  width: 100%;
+  position: relative;
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+button[type=button] {
+  background-color: #13273E;
+  width: 30%;
+  min-width: 130px;
+  max-width: 140px;
+  margin: auto;
+  height: 43px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+}
+
+
+
+.card{
+  overflow: hidden;
+  border: none;
+}
+
+.card-header{
+  background-color: #13273E;
+  color: #F7F9F9;
+}
+
+@media screen and (min-width: 960px) {
+  h1{
+    font-size: 3rem;
+    padding: 30px;
+  }
+  
+}
+
