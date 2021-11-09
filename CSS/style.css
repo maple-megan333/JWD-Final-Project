@@ -123,11 +123,68 @@ border-radius: 15px;
 
 }
 
+.btn-group{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.btn-group button{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+width:25%;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+font-weight: 600;
+}
+
+.arch{
+  background: #BED8D4;
+}
+
+.done{
+  background:#2176AE;
+  color: #F7F9F9;
+}
+
+.start{
+background: #13273E;
+color: #F7F9F9;
+}
+
+footer{
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+footer section{
+  width:95%;
+  margin: auto;
+}
+
+footer section p{
+  min-width: 25%;
+  margin: auto;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 600;
+  color: #13273E;
+}
+
 @media screen and (min-width: 960px) {
   h1{
     font-size: 3rem;
     padding: 30px;
   }
-  
+  .btn-group{
+    display: block;
+  }
+  .btn-group button{
+    display: block;
+    padding: 5px;
+    width: 80%;
+    margin-top: 10px;
+    
 }
-
+}
