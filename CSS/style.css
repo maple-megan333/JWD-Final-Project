@@ -24,6 +24,9 @@ min-width: 100%;
  background: linear-gradient(180deg, rgba(19, 39, 62, 0.85) 0%, rgba(190, 216, 212, 0.7225) 93.75%);
 overflow: hidden;
 }
+main{
+  margin: 10px;
+}
 
 h1{
   color: #F7F9F9;
@@ -71,6 +74,44 @@ label{
   font-weight: 500;
   padding: 20px;
 }
+
+.sign{
+background: #F7F9F9;
+border-radius: 8px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+padding: 10px;
+display: inline;
+font-weight: 500;
+}
+
+.start{
+background: #2176AE;
+color: #F7F9F9;
+font-weight: 500;
+border-radius: 8px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+padding: 10px;
+display: inline;
+}
+
+.comp{
+background: #2176AE;
+color: #F7F9F9;
+border-radius: 8px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+padding: 10px;
+display: inline;
+font-weight: 500;
+}
+.doarch{
+background: #BED8D4;
+border-radius: 8px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+padding: 10px;
+display: inline;
+font-weight: 500;
+}
+
 
 
 input[type=text] {
@@ -185,6 +226,8 @@ footer section p{
     padding: 5px;
     width: 80%;
     margin-top: 10px;
-    
-}
+  }
+  main{
+    margin: 30px;
+  }
 }
