@@ -1,7 +1,7 @@
- class TaskManager {
+class TaskManager {
   constructor() {
     this.tasks = [];
   }
 }
 
-export class TaskManager;
+export {TaskManager}; 
