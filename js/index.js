@@ -1,8 +1,30 @@
 //imports
 //import { TaskManager } from "./taskManager";
+const taskManager = new taskManager(0);
 
-const task1 = new TaskManager;
-task1.addTask('Help', 'I need somebody', 'help', 'not just anybody', 'HEEEELP' );
-const task2 = new TaskManager;
-task1.addTask('Help', 'I need somebody', 'help', 'not just anybody', 'HEEEELP' );
-console.log(task1.tasks);
+const newTaskform = document.querySelector('#newTask');
+
+newTaskform.addEventListener("submit", (event) => {
+
+  event.preventDefault();
+
+  const newName = document.querySelector("#newName");
+  const newDescription = document.querySelector("#newDescription");
+  const newAssignedTo = document.querySelector("#newAssignedTo");
+  const newDueDate = document.querySelector("#newDueDate");
+
+  const name = newName.value;
+  const description = newDescription.value;
+  const assignedTo = newAssignedTo.value;
+  const dueDate = newDueDate.value;
+
+  taskManager.addTask(name, description, assignedTo, dueDate);
+
+  newName.value = '';
+  newDescription.value = '';
+  newAssignedTo.value = '';
+  newDueDate.value = '';
+
+
+})
+//console.log(task1.tasks);

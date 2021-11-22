@@ -22,45 +22,45 @@
 
 		<main class="row row-cols-1 row-cols-lg-2 g-5">
 			<section class="col col-12 col-lg-4">
-				<form>
+				<form id="newTask">
           <h2>Assign a Task </h2>
           <p>
               Fill in the form below and your task card will be generated.
           </p>
 					<div class="space form-group row row-cols-1 row-cols-lg-2">
-						<label for="name" class="col-3 col-form-label ">Name:</label>
+						<label for="newName" class="col-3 col-form-label ">Name:</label>
               <div class="col-8 col-lg-12" >
-              <input type="text" id="name" placeholder="Enter Name" class="form-control">
+              <input type="text" id="newName" placeholder="Enter Name" class="form-control">
               </div>
             </div>
 
             <div class="space form-group row row-cols-1 row-cols-lg-2">
-              <label for="description" class="col-3 ">Description:</label>
+              <label for="newDescription" class="col-3 ">Description:</label>
               <div class="col-8 col-lg-12">
-              <input type="text" class="form-control " id="description" placeholder="Description">
+              <input type="text" class="form-control " id="newDescription" placeholder="Description">
               </div>
             </div>
 
             <div class=" space row row-cols-2 row-cols-lg-1 ">
               <div class="col">
                 <div class="form-group row row-cols-1 row-cols-lg-2 ">
-                  <label for="assigned to" class="col col-xl-12">Assigned To:</label>
+                  <label for="newAssignedTo" class="col col-xl-12">Assigned To:</label>
                   <div class="col-12 col-xl-12">
-                  <input type="text" class="form-control " id="assigned to" placeholder="Assigned To">
+                  <input type="text" class="form-control " id="newAssignedTo" placeholder="Assigned To">
                   </div>
                 </div>
               </div>
                 <div class="col">
                   <div class="form-group row row-cols-1 row-cols-lg-2">
-                    <label for="due date" class="col col-xl-12">Due Date:</label>
+                    <label for="newDueDate" class="col col-xl-12">Due Date:</label>
                     <div class="col-12 col-xl-12">
-                    <input type="text" class="form-control" id="due date" placeholder="Due Date">
+                    <input type="text" class="form-control" id="newDueDate" placeholder="Due Date">
                     </div>
                   </div>
                 </div>
               </div>
               <div class="centerb">
-            <button type="button" class="btn btn-primary col">Create Task</button>
+            <button id="submit" type="button" class="btn btn-primary col">Create Task</button>
               </div>
           </form>
         </section>
