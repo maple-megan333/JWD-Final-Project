@@ -1,3 +1,5 @@
+//imports
+
 
 // Select the New Task Form
 const newTaskForm = document.querySelector('#newTaskForm');
@@ -36,3 +38,6 @@ newTaskForm.addEventListener('submit', (event) => {
 function validFormFieldInput(data){
     return data !== null && data !== '';
 }
+
+import TaskManager from js/TaskManager;
+console.log(tasks);
