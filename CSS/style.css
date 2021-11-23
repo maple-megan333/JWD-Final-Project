@@ -13,13 +13,13 @@ body {
   background-image: url(../images/bgtxt.jpg);
   background-repeat: no-repeat;
   background-size: auto;
-  min-height: 100%;
+  min-height: 100vh;
   min-width: 100%;
   color: #13273E;
 }
 
 .container-fluid{
-min-height: 100%;
+min-height: 100vh;
 min-width: 100%;
  background: linear-gradient(180deg, rgba(19, 39, 62, 0.85) 0%, rgba(190, 216, 212, 0.7225) 93.75%);
 overflow: hidden;
@@ -73,7 +73,28 @@ label{
 }
 
 .sign{
-background: #F7F9F9;
+background: #13273E;
+color: #F7F9F9;
+border-radius: 8px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+padding: 10px;
+display: inline;
+font-weight: 500;
+}
+
+.sign1{
+background: #BED8D4;
+color: #13273E;
+border-radius: 8px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+padding: 10px;
+display: inline;
+font-weight: 500;
+}
+
+.sign2{
+background: #2176AE;
+color: #F7F9F9;
 border-radius: 8px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 padding: 10px;
