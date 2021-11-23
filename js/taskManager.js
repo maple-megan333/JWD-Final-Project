@@ -130,7 +130,7 @@ class TaskManager {
   
 
   //task 8 create a save method
-  /*save() {
+  save() {
     const tasksJson = JSON.stringify(this.tasks);
     localStorage.setItem('tasks', tasksJson);
     const currentId = String(this.currentId);
@@ -145,10 +145,11 @@ class TaskManager {
     }
 
     if (localStorage.getItem('currentId')) {
-      const currentId = localStorage.getItem('currentId')
+      const currentId = localStorage.getItem('currentId');
       this.currentId = Number(currentId);
     }
-  }*/
+  }
+  
 
   /*task 9 create a deleteTask method
   deleteTask(taskId) {
