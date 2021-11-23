@@ -93,6 +93,20 @@ class TaskManager {
      return foundTask;
    }
 
+     //task 9 create a deleteTask method
+  deleteTask(taskId) {
+    const newTasks = [];
+    for (let i = 0; i < this.tasks.length; i++) {
+      const task = this.tasks[i];
+      if (task.id !== taskId) {
+        newTasks.push(task);
+      }
+    }
+
+    this.tasks = newTasks;
+  }
+  
+
   // this renders the cards on the page
 
   render() {
@@ -151,19 +165,7 @@ class TaskManager {
   }
   
 
-  /*task 9 create a deleteTask method
-  deleteTask(taskId) {
-    let newTasks = [];
-    for (let i = 0; i++) {
-      const task = this.tasks[i];
-      if (task.id !== taskId) {
-        newTasks.push(task);
-      }
-    }
 
-    this.tasks = newTasks;
-  }
-  */
 }
 
 //export {TaskManager}; 

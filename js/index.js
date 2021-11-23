@@ -1,17 +1,16 @@
 ////imports
-//import { TaskManager } from "./taskManager";
-
-//taskManager.load();
-
+//import { TaskManager } from "./taskManager"
 const taskManager = new TaskManager();
 
 const newTaskform = document.querySelector('#newTask');
 
+taskManager.load();
 
+taskManager.render();
 
 
 newTaskform.addEventListener('submit', (event) => {
-  
+
   event.preventDefault();
 
   //input feild variable conversions
@@ -45,6 +44,7 @@ newTaskform.addEventListener('submit', (event) => {
   newAssignedTo.value = '';
   newDueDate.value = '';
 
+taskManager.save();
 
   console.log(taskManager.tasks);
 
@@ -62,36 +62,47 @@ const toDos = document.querySelector('#taskLists');
 
 //adds event listeners for the task area and contains functions for buttons on status change. 
 toDos.addEventListener('click', (event) => {
-  if(event.target.classList.contains('done')){
-    
-  const parentTask = event.target.parentElement.parentElement.parentElement;
-  
-  const taskId = Number(parentTask.dataset.taskId);
+  if (event.target.classList.contains('done')) {
 
-  const task = taskManager.getTaskById(taskId);
+    const parentTask = event.target.parentElement.parentElement.parentElement;
 
-  //document.getElementById('task').getElementsByClassName('.sign').style.backgroundColor = '#78D5D7';
+    const taskId = Number(parentTask.dataset.taskId);
 
-  task.status = 'Completed';
+    const task = taskManager.getTaskById(taskId);
 
-  //taskManager.save();
-  
-  taskManager.render();
-  
-  } else if (event.target.classList.contains('start')){
-      const parentTask = event.target.parentElement.parentElement.parentElement;
-  
-  const taskId = Number(parentTask.dataset.taskId);
 
-  const task = taskManager.getTaskById(taskId);
+    task.status = 'Completed';
 
-  //document.getElementById('task').getElementsByClassName('.sign').style.backgroundColor = '#78D5D7';
+    taskManager.save();
 
-  task.status = 'In Progress';
+    taskManager.render();
 
-  //taskManager.save();
-  
-  taskManager.render();
+  } else if (event.target.classList.contains('start')) {
+    const parentTask = event.target.parentElement.parentElement.parentElement;
+
+    const taskId = Number(parentTask.dataset.taskId);
+
+    const task = taskManager.getTaskById(taskId);
+
+
+    task.status = 'In Progress';
+
+    taskManager.save();
+
+    taskManager.render();
+  } 
+   if (event.target.classList.contains('remove')) {
+    const parentTask = event.target.parentElement.parentElement.parentElement;
+
+    const taskId = Number(parentTask.dataset.taskId);
+
+    const task = taskManager.getTaskById(taskId);
+
+    taskManager.deleteTask(taskId);
+
+    taskManager.save();
+
+    taskManager.render();
   }
 });
 
